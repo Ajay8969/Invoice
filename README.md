@@ -9,8 +9,6 @@ Responsive Design: Ensures optimal display on devices of all sizes.
 How to Use
 Clone the repository to your local machine:
 
-bash
-Copy code
 git clone https://github.com/Ajay8969/Invoice.git
 Open the index.html file in your browser or preferred code editor.
 
