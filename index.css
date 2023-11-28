@@ -1,0 +1,135 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+:root {
+    --clr-primary: #3B2F5D;
+    --clr-secondary: #FF8F00;
+    --clr-text: #8176FF;
+    --clr-white: #fff;
+}
+body {
+    font-family: poppins;
+    color: var(--clr-text);
+}
+h1,h2,h3,h4,h5 {
+    color: var(--clr-primary);
+}
+
+.h1 {
+    color: var(--clr-primary);
+}
+.container-fluid {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 100%;
+}
+.container{
+    padding: 1rem 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.invoice-business p {
+    padding-top: 1.5rem;
+    padding-left: 0.8rem;
+    font-size: 0.7rem;
+}
+
+strong {
+    color: var(--clr-primary);
+}
+
+.invoice-logo {
+    padding-top: 1rem;
+}
+
+.invoice {
+    text-align: end;
+}
+
+.bx-store-alt {
+        background-color: var(--clr-secondary);
+        padding: 1rem;
+        font-size: 2rem;
+        color: var(--clr-white);
+        border-radius: 1rem;
+    }
+.invoice-line {
+    opacity: 1;
+    width: 97.6%;
+    margin-left: 0.9rem;
+    border: 0.2rem solid var(--clr-text);
+}
+
+.light-line {
+    opacity: 0.7;
+    width: 97.6%;
+    margin-left: 0.9rem;
+    border: 1px solid var(--clr-text);
+}
+
+.light-lines {
+    opacity: 0.7;
+    border: 1px solid var(--clr-text);
+}
+
+.invoice-company .invoice-company-text {
+    font-size: 0.7rem;
+    padding-left: 0.2rem;
+}
+
+.bill-no p {
+    font-size: 0.7rem;
+}
+
+.font-size-p {
+    font-size: 0.7rem;
+}
+
+.item-size-h5 {
+    font-size: 0.7rem;
+}
+
+.font-size-price {
+    font-size: 0.9rem;
+}
+
+.link-signup {
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+
+.page {
+    color: var(--clr-primary);
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.pages {
+    margin-top: 5rem;
+}
+
+.button-center {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    margin-top: 25%;
+}
+
+
+/* mobile responsive */
+
+@media (max-width: 575.98px) { 
+    .invoice-logo {
+        padding-top: 1.1rem;
+    }
+    .bx-store-alt {
+        background-color: var(--clr-secondary);
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: var(--clr-white);
+        border-radius: 1rem;
+    }
+    .pages {
+        margin-top: 2rem;
+    }
+ }
