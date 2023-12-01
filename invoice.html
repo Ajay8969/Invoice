@@ -6,7 +6,149 @@
     <title>Invoice</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="/index.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+            :root {
+                --clr-primary: #3B2F5D;
+                --clr-secondary: #FF8F00;
+                --clr-text: #8176FF;
+                --clr-white: #fff;
+            }
+            body {
+                font-family: poppins;
+                color: var(--clr-text);
+            }
+            h1,h2,h3,h4,h5 {
+                color: var(--clr-primary);
+            }
+            
+            .container-fluid {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                height: 100%;
+            }
+            .container{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                padding-top: 1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-bottom: 1rem;
+            }
+            .invoice-business p {
+                padding-top: 1.5rem;
+                padding-left: 0.8rem;
+                font-size: 0.7rem;
+            }
+            
+            strong {
+                color: var(--clr-primary);
+            }
+            
+            .invoice-logo {
+                padding-top: 1rem;
+            }
+            
+            .invoice {
+                text-align: end;
+            }
+            
+            .bx-store-alt {
+                    background-color: var(--clr-secondary);
+                    padding: 1rem;
+                    font-size: 2rem;
+                    color: var(--clr-white);
+                    border-radius: 1rem;
+                }
+            .invoice-line {
+                opacity: 1;
+                width: 97.6%;
+                margin-left: 0.9rem;
+                border: 0.2rem solid var(--clr-text);
+            }
+            
+            .light-line {
+                opacity: 0.7;
+                width: 97.6%;
+                margin-left: 0.9rem;
+                border: 1px solid var(--clr-text);
+            }
+            
+            .light-lines {
+                opacity: 0.7;
+                border: 1px solid var(--clr-text);
+            }
+            
+            .invoice-company .invoice-company-text {
+                font-size: 0.7rem;
+                padding-left: 0.2rem;
+            }
+            
+            .bill-no p {
+                font-size: 0.7rem;
+            }
+            
+            .font-size-p {
+                font-size: 0.7rem;
+            }
+            
+            .item-size-h5 {
+                font-size: 0.7rem;
+            }
+            
+            .font-size-price {
+                font-size: 0.9rem;
+            }
+            
+            .link-signup {
+                text-decoration: none;
+                color: var(--clr-secondary);
+            }
+            
+            .page {
+                color: var(--clr-primary);
+                text-decoration: none;
+                margin-top: 1rem;
+            }
+            
+            .pages {
+                margin-top: 5rem;
+            }
+            
+            .button-center {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .btn-primary {
+                margin-top: 25%;
+            }
+            
+            
+            /* mobile responsive */
+            
+            @media (max-width: 765px) { 
+                .container{
+                    padding-right: 2rem;
+                }
+             }
+            @media (max-width: 575.98px) { 
+                .invoice-logo {
+                    padding-top: 1.1rem;
+                }
+                .bx-store-alt {
+                    background-color: var(--clr-secondary);
+                    padding: 1rem;
+                    font-size: 1.5rem;
+                    color: var(--clr-white);
+                    border-radius: 1rem;
+                }
+                .pages {
+                    margin-top: 2rem;
+                }
+             }
+        </style>
 </head>
 <body class="bg-dark"> 
     <div class="container-fluid">
@@ -174,12 +316,11 @@
 
                     <div class="col-10 mt-5">
                         <p class="font-size-price">
-                            <strong>Want to customize your invoice even more?</strong>
-                            <br>Add text, discounts, and service charge with Square invoices.
-                            <br><a href="#" class="link-signup"><em>sign up for square invoices free.</em></a>
+                            <strong>Our Website</strong><br>
+                            <a href="#" class="link-signup"><em>www.groarz.com</em></a>
                         </p>
                     </div>
-                    <div class="col-sm-2 pages text-end">
+                    <div class="col-sm-2 mt-5 pages text-end">
                         <a href="#" class="page">Page 1</a>
                     </div>
                 <!-- invoice-problem -->
